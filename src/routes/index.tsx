@@ -6,7 +6,11 @@ const App = createStackNavigator();
 
 const AppRoutes: React.FC = () => {
   return (
-    <App.Navigator>
+    <App.Navigator
+      screenOptions={{
+        headerShown: false,
+        cardStyle: {backgroundColor: '#fff'},
+      }}>
       <App.Screen name="Onboarding" component={Onboarding} />
     </App.Navigator>
   );
